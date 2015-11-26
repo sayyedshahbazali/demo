@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:background="@color/background_material_dark"
+
+    android:id="@+id/layout"
+   tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 November 2015"
+            android:id="@+id/textView"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffeaffee"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="34dp"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/view"
+            android:layout_centerVertical="true"
+            android:background="@android:color/background_light"/>
+
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/view"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/calendar"
+            android:id="@+id/button"
+
+             />
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/view"
+            android:layout_below="@+id/textView"
+
+            android:id="@+id/viewfact"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View fact"
+            android:id="@+id/textViewdetail"
+            android:layout_toRightOf="@id/viewfact"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textView"
+            android:textColor="#ffeaffee"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
