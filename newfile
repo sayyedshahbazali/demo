@@ -1,0 +1,11 @@
+This works fine in the existing setup, but on the new box it returns a
+"File Not Found" error at this line. If I hard code a path in there
+(i.e. "C:\temp\Upload.ini") it will work, but I don't want to do that.
+So my question is, why isn't this working? It should be trying to read
+UpLoad.ini from the same directory that the .dll file is registered in,
+right? (in this case, C:\WINDOWS\System32) Is it a permissions issue?
+I've tried giving IUSR_* and SYSTEM accounts read/write access to that
+folder (against my better judgement) as well as to the folder the code
+is ultimately going to write to (that's a whole other, but perhaps
+similar, ball of wax).
+
